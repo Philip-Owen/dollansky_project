@@ -1,0 +1,45 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100%;
+	background-color: $background-color;
+	color: $body-text-color;
+	padding-top: 70px;
+	padding-bottom: 120px;
+}
+
+#footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #efefef;
+	font-size: $heading-3;
+	font-family: $overpass;
+	background-color: $accent-color-gray;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.footer-section {
+	height: 120px;
+}
+
+.copyright>p {
+	font-size: $heading-4;
+	position: relative;
+	padding-top: 70px;
+}
+
+.footer-row {
+	padding-left: 20px;
+	padding-right: 20px;
+}

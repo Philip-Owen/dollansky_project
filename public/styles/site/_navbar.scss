@@ -1,0 +1,38 @@
+.navbar {
+    background-color: $background-color;
+    li {
+        font-size: $heading-3;
+        color: $body-text-color;
+        font-family: $overpass;	
+    }
+    a:hover {
+        color: $body-text-color;
+    }
+}
+
+.navbar-default {
+    border-bottom: 1px solid black;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: $body-text-color;
+}
+
+.navbar-header {
+    font-family: $overpass;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: $accent-color-yellow;
+    background-color: $background-color;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: $body-text-color;
+}
+
+.navbar-default .navbar-nav > li > a.nav-links{
+    padding-left: 50px;
+    margin-right: 10px;
+}
