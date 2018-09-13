@@ -1,0 +1,57 @@
+.jumbotron {
+  background: url('../../images/dianaAishe605163Unsplash.png') no-repeat center;
+  height: 570px;
+}
+
+.card {
+  background-color: $accent-color-gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 75%;
+}
+
+.card-content {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+.card-row>.col-md-6 {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 500px;
+}
+
+.card-title {
+  padding-top: 5px;
+  color: $accent-color-orange
+}
+
+.card-text {
+  font-family: Montserrat-Medium;
+  color: $body-text-color;
+  line-height: 30pt;
+  font-size: 18px;
+}
+
+.card-text-title {
+  color: $accent-color-yellow;
+}
+
+.button-register {
+  border-radius: 50px;
+  border: 1px solid $accent-color-yellow;
+  background-color: transparent;
+  color: $accent-color-yellow;
+  height: 42px;
+  width: 131px;
+}
+
+.register-banner {
+  background-color: $accent-color-orange;
+  height: 130px;
+  margin-bottom: 50px;
+  h3 {
+    padding-top: 40px;
+  }
+}

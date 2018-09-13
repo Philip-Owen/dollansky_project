@@ -5830,6 +5830,7 @@ body {
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
+  font-family: "Overpass Mono", monospace;
   background-color: #222222;
   color: #F7F7F7;
   padding-top: 70px;
@@ -5841,7 +5842,7 @@ body {
   bottom: 0;
   left: 0;
   background-color: #efefef;
-  font-size: 28pt;
+  font-size: 28px;
   font-family: "Overpass Mono", monospace;
   background-color: #343434; }
 
@@ -5852,7 +5853,7 @@ body {
   height: 120px; }
 
 .copyright > p {
-  font-size: 20pt;
+  font-size: 20px;
   position: relative;
   padding-top: 70px; }
 
@@ -5860,10 +5861,13 @@ body {
   padding-left: 20px;
   padding-right: 20px; }
 
+.row.footer-row {
+  margin-right: 0; }
+
 .navbar {
   background-color: #222222; }
   .navbar li {
-    font-size: 28pt;
+    font-size: 28px;
     color: #F7F7F7;
     font-family: "Overpass Mono", monospace; }
   .navbar a:hover {
@@ -5889,3 +5893,51 @@ body {
 .navbar-default .navbar-nav > li > a.nav-links {
   padding-left: 50px;
   margin-right: 10px; }
+
+.jumbotron {
+  background: url("../../images/dianaAishe605163Unsplash.png") no-repeat center;
+  height: 570px; }
+
+.card {
+  background-color: #343434;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 75%; }
+
+.card-content {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px; }
+
+.card-row > .col-md-6 {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 500px; }
+
+.card-title {
+  padding-top: 5px;
+  color: #E86706; }
+
+.card-text {
+  font-family: Montserrat-Medium;
+  color: #F7F7F7;
+  line-height: 30pt;
+  font-size: 18px; }
+
+.card-text-title {
+  color: #FFCE00; }
+
+.button-register {
+  border-radius: 50px;
+  border: 1px solid #FFCE00;
+  background-color: transparent;
+  color: #FFCE00;
+  height: 42px;
+  width: 131px; }
+
+.register-banner {
+  background-color: #E86706;
+  height: 130px;
+  margin-bottom: 50px; }
+  .register-banner h3 {
+    padding-top: 40px; }
