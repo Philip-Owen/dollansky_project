@@ -5849,11 +5849,8 @@ body {
 .container-fluid {
   padding: 0; }
 
-.footer-section {
-  height: 120px; }
-
 .copyright > p {
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
   padding-top: 70px; }
 
