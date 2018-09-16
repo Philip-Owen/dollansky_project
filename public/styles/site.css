@@ -6030,3 +6030,75 @@ h1.faster-font {
   h1.faster-font {
     font-family: 'Faster One', cursive;
     font-size: 60px; } }
+
+.jumbotron.about {
+  background: url("../../images/dollansky1 + dollansky1 Mask.png") no-repeat center;
+  height: 570px;
+  background-size: cover;
+  position: relative;
+  padding-left: 0; }
+
+.quote-card {
+  background-color: #FFCE00;
+  padding: 60px 0 40px 0;
+  color: black;
+  opacity: .9;
+  height: 100%; }
+  .quote-card h2 {
+    font-size: 36px; }
+
+.about-quote .quote-card {
+  padding: 60px 0 40px 0; }
+
+.mission-quote {
+  margin-top: 70px; }
+  .mission-quote .quote-card {
+    padding: 60px 0 40px 0; }
+
+.about-text {
+  margin-bottom: 30px; }
+  .about-text h2 {
+    font-size: 36px;
+    padding-bottom: 10px; }
+  .about-text p {
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 10px; }
+
+.about-section {
+  padding-bottom: 50px; }
+
+.accolades {
+  top: -70px;
+  padding-right: 20px; }
+  .accolades .col-sm-12 {
+    margin-bottom: 20px; }
+
+.accolades-title {
+  color: #E86706; }
+
+.fa-trophy {
+  font-size: 70px; }
+
+.fa-quote-right {
+  color: #F7F7F7;
+  font-size: 50px; }
+
+.mission-text h2 {
+  font-size: 36px;
+  padding-bottom: 10px; }
+
+.mission-text p {
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 10px; }
+
+.section-text-box {
+  padding-top: 20px; }
+
+.mission-row {
+  margin-bottom: 60px; }
+
+.quote-inner-card {
+  padding-left: 70px;
+  padding-right: 50px; }
