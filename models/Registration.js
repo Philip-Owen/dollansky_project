@@ -14,8 +14,8 @@ var Registration = new keystone.List('Registration', {
 
 // COMBAK: This will need to be refactored for use payment gateway. This is a temp mockup.
 Registration.add({
-	programName: { type: String, required: true },
-	programPrice: { type: Number, required: true },
+	programName: { type: String, required: false },
+	programPrice: { type: Number, required: false },
 	personalInfo: {
 		firstName: { type: String, required: true },
 		lastName: { type: String, required: true },

@@ -1,3 +1,78 @@
-<div class="container-fluid">
-    <h1>Register Page</h1>
+<div class="container">
+	<h1>Register</h1>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8 col-md-6">
+			{{#if registrationSubmitted}}
+			<h3>Thanks for choosing Dollansky Racing Academy.</h3>
+			{{else}}
+			<form method="post">
+				<input type="hidden" name="action" value="register">
+                <h2>Personal Information</h2>
+				<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+					<label>Name</label>
+					<input type="text" name="personalInfo.firstName"  class="form-control" value="{{formData.[personalInfo.firstName]}}">
+                    <input type="text" name="personalInfo.lastName"  class="form-control" value="{{formData.[personalInfo.lastName]}}">
+				</div>
+				<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+					<label>Email</label>
+					<input type="email" name="personalInfo.email" class="form-control" value="{{formData.personalInfo.email}}">
+				</div>
+				<div class="form-group">
+					<label>Phone</label>
+					<input type="text" name="personalInfo.phone" class="form-control" value="{{formData.personalInfo.phone}}">
+				</div>
+                <div class="form-group">
+					<label>Indicates sprint car driving experience</label>
+                    <div>
+                        <input type="radio" name="personalInfo.experience" value="1"> Not Experienced
+                        <input type="radio" name="personalInfo.experience" value="2">
+                        <input type="radio" name="personalInfo.experience" value="3"> Somewhat Experienced
+                        <input type="radio" name="personalInfo.experience" value="4">  
+                        <input type="radio" name="personalInfo.experience" value="5"> Very Experienced
+                    </div>
+				</div>
+                <h2>Payment Information</h2>
+                <div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+					<label>Name</label>
+					<input type="text" name="paymentInfo.firstName"  class="form-control" value="{{formData.[paymentInfo.firstName]}}">
+                    <input type="text" name="paymentInfo.lastName"  class="form-control" value="{{formData.[paymentInfo.lastName]}}">
+				</div>
+                <div class="form-group">
+					<label>Card Number</label>
+					<input type="number" name="paymentInfo.cardNumber" class="form-control" value="{{formData.paymentInfo.cardNumber}}">
+				</div>
+                <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+					<label>Expiration Date</label>
+					<input type="text" name="paymentInfo.expDate" class="form-control" value="{{formData.paymentInfo.expDate}}">
+				</div>
+                <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+					<label>CVV</label>
+					<input type="text" name="paymentInfo.cvv" class="form-control" value="{{formData.paymentInfo.cvv}}">
+				</div>
+                <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+					<label>Billing address</label>
+					<input type="text" name="paymentInfo.billingAddress" class="form-control" value="{{formData.paymentInfo.billingAddress}}">
+				</div>
+                <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+					<label>Billing Address 2</label>
+					<input type="text" name="paymentInfo.billingAddress2" class="form-control" value="{{formData.paymentInfo.billingAddress2}}">
+				</div>
+                <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+					<label>City</label>
+					<input type="text" name="paymentInfo.city" class="form-control" value="{{formData.paymentInfo.city}}">
+				</div>
+                <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+					<label>State & Zip Code</label>
+					<input type="text" name="paymentInfo.state" class="form-control" value="{{formData.paymentInfo.state}}">
+                    <input type="text" name="paymentInfo.zipcode" class="form-control" value="{{formData.paymentInfo.zipcode}}">
+				</div>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary">Send</button>
+				</div>
+			</form>
+			{{/if}}
+		</div>
+	</div>
 </div>

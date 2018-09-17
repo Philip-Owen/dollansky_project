@@ -49,6 +49,7 @@ exports = module.exports = function (req, res) {
 				locals.validationErrors = err.errors;
 			} else {
 				locals.registrationSubmitted = true;
+				locals.formData = {};
 			}
 			next();
 		});
