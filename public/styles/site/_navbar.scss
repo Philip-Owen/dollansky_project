@@ -1,21 +1,14 @@
 .navbar {
     background-color: $background-color;
-    li {
-        font-size: $heading-3;
-        color: $body-text-color;
-        font-family: $overpass;	
-    }
-    a:hover {
-        color: $body-text-color;
-    }
+    font-size: 20px;
 }
 
 .navbar-default {
     border-bottom: 1px solid black;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: $body-text-color;
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand > a:hover {
+    color: $accent-color-yellow;
 }
 
 .navbar-header {
@@ -28,11 +21,35 @@
     background-color: $background-color;
 }
 
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: $accent-color-yellow;
+}
+
 .navbar-default .navbar-nav > li > a {
     color: $body-text-color;
 }
 
 .navbar-default .navbar-nav > li > a.nav-links{
-    padding-left: 50px;
+    // padding-left: 50px;
     margin-right: 10px;
+}
+
+.navbar-default a.navbar-brand {
+    color: $body-text-color;
+}
+
+.navbar-default a.navbar-brand.active {
+    color: $accent-color-yellow;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 15px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: black;
 }

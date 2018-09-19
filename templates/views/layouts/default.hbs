@@ -34,20 +34,9 @@
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
-							{{!-- {{# each home}}
-								<a {{#ifeq href '/'}}class="navbar-brand"{{else}}class="navbar-brand active"{{/ifeq}} href="/" >
-							{{/each}} --}}
-							<ul class="nav navbar-nav">
-								{{# each home}}
-									<li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-										<a href="/">
-											{{!-- Placeholder logo until we get one or this can be removed later --}}
-											<img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-											DOLLANSKY DRIVEN TO WIN
-										</a>
-									</li>
-								{{/each}}
-							</ul>
+							{{# each home}}
+								<a {{#ifeq ../section key}}class="navbar-brand active"{{else}}{{/ifeq}} href="/" class="navbar-brand">DOLLANSKY DRIVEN TO WIN</a>
+							{{/each}}
 						</div>
 						<div class="collapse navbar-collapse">
 							<ul class="nav navbar-nav navbar-right">
