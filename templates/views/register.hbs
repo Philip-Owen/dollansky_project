@@ -1,78 +1,284 @@
-<div class="container">
-	<h1>Register</h1>
-</div>
-<div class="container">
+
+<div class="container-fluid registration">
 	<div class="row">
-		<div class="col-sm-8 col-md-6">
-			{{#if registrationSubmitted}}
-			<h3>Thanks for choosing Dollansky Racing Academy.</h3>
-			{{else}}
-			<form method="post">
-				<input type="hidden" name="action" value="register">
-                <h2>Personal Information</h2>
-				<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
-					<label>Name</label>
-					<input type="text" name="personalInfo.firstName"  class="form-control" value="{{formData.[personalInfo.firstName]}}">
-                    <input type="text" name="personalInfo.lastName"  class="form-control" value="{{formData.[personalInfo.lastName]}}">
-				</div>
-				<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-					<label>Email</label>
-					<input type="email" name="personalInfo.email" class="form-control" value="{{formData.personalInfo.email}}">
-				</div>
-				<div class="form-group">
-					<label>Phone</label>
-					<input type="text" name="personalInfo.phone" class="form-control" value="{{formData.personalInfo.phone}}">
-				</div>
-                <div class="form-group">
-					<label>Indicates sprint car driving experience</label>
-                    <div>
-                        <input type="radio" name="personalInfo.experience" value="1"> Not Experienced
-                        <input type="radio" name="personalInfo.experience" value="2">
-                        <input type="radio" name="personalInfo.experience" value="3"> Somewhat Experienced
-                        <input type="radio" name="personalInfo.experience" value="4">  
-                        <input type="radio" name="personalInfo.experience" value="5"> Very Experienced
-                    </div>
-				</div>
-                <h2>Payment Information</h2>
-                <div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
-					<label>Name</label>
-					<input type="text" name="paymentInfo.firstName"  class="form-control" value="{{formData.[paymentInfo.firstName]}}">
-                    <input type="text" name="paymentInfo.lastName"  class="form-control" value="{{formData.[paymentInfo.lastName]}}">
-				</div>
-                <div class="form-group">
-					<label>Card Number</label>
-					<input type="number" name="paymentInfo.cardNumber" class="form-control" value="{{formData.paymentInfo.cardNumber}}">
-				</div>
-                <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-					<label>Expiration Date</label>
-					<input type="text" name="paymentInfo.expDate" class="form-control" value="{{formData.paymentInfo.expDate}}">
-				</div>
-                <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-					<label>CVV</label>
-					<input type="text" name="paymentInfo.cvv" class="form-control" value="{{formData.paymentInfo.cvv}}">
-				</div>
-                <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-					<label>Billing address</label>
-					<input type="text" name="paymentInfo.billingAddress" class="form-control" value="{{formData.paymentInfo.billingAddress}}">
-				</div>
-                <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-					<label>Billing Address 2</label>
-					<input type="text" name="paymentInfo.billingAddress2" class="form-control" value="{{formData.paymentInfo.billingAddress2}}">
-				</div>
-                <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-					<label>City</label>
-					<input type="text" name="paymentInfo.city" class="form-control" value="{{formData.paymentInfo.city}}">
-				</div>
-                <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-					<label>State & Zip Code</label>
-					<input type="text" name="paymentInfo.state" class="form-control" value="{{formData.paymentInfo.state}}">
-                    <input type="text" name="paymentInfo.zipcode" class="form-control" value="{{formData.paymentInfo.zipcode}}">
-				</div>
-				<div class="form-actions">
-					<button type="submit" class="btn btn-primary">Send</button>
-				</div>
-			</form>
-			{{/if}}
+		<div class="col-sm-10 col-sm-offset-1">
+			<h1>Register</h1>
 		</div>
 	</div>
+
+	{{#if registrationSubmitted}}
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-4">
+			<h3>Thanks for choosing Dollansky Racing Academy.</h3>
+		</div>
+	</div>
+
+	{{else}}
+	<form method="post">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<h2 class="registration-section-title">Select a program</h2>
+				<div class="row">
+					<fieldset name="programName">
+						<div class="col-sm-3">
+							<div class="program-card">
+								<h2 class="text-center">$XXX</h2>
+								<div class="program-text">
+									<p class="program-title">team coaching</p>
+									<p> Customized training for your teams needs. This program will enhance your driving ability and strengthen you as a team in key areas.</p>
+									<div class="text-center fixed-bottom program-radio">
+										<input class="radio-button" type="radio" name="programName" value="team coaching">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="program-card">
+							<h2 class="text-center">$XXX</h2>
+								<div class="program-text">
+									<p class="program-title">racing experience</p>
+									<p>Experience the thrill of a lifetime. Choose between packages and number of laps. Can drive a DDTW prepared car or bring your own.</p>
+									<div class="text-center fixed-bottom program-radio">
+										<input class="radio-button"  type="radio" name="programName" value="racing experience">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="program-card">
+								<h2 class="text-center">$XXX</h2>
+								<div class="program-text">
+									<p class="program-title">2-day driving course</p>
+									<p>Get up to speed on building your professional brand and practice how to stay safe while racing.</p>
+								</div>
+								<div class="text-center fixed-bottom program-radio">
+									<input class="radio-button"  type="radio" name="programName" value="2 day course">
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="program-card">
+								<h2 class="text-center">$XXX</h2>
+								<div class="program-text">
+									<p class="program-title">promotions consulting</p>
+									<p>Get consulted by our expert team on your upcoming event to maximize it’s success.</p>
+									<div class="text-center fixed-bottom program-radio">
+										<input class="radio-button"  type="radio" name="programName" value="promotions consulting">
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<input type="hidden" name="action" value="register">
+				<h2 class="registration-section-title">Personal information</h2>
+				<div class="row">
+					<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+						<div class="col-sm-3 text-right">
+							<label>Name<span class="field-required"> *</span></label>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" name="personalInfo.firstName"  placeholder="First Name" class="form-control" value="{{formData.[personalInfo.firstName]}}">
+						</div>
+						<div class="col-sm-3">
+							<input type="text" name="personalInfo.lastName"  placeholder="Last Name" class="form-control" value="{{formData.[personalInfo.lastName]}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+						<div class="col-sm-3 text-right">
+							<label>Email<span class="field-required"> *</span></label>
+						</div>
+						<div class="col-sm-6">
+							<input type="email" name="personalInfo.email" placeholder="email" class="form-control" value="{{formData.personalInfo.email}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+						<div class="col-sm-3 text-right">
+							<label>Phone<span class="field-required"> *</span></label>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" name="personalInfo.phone" placeholder="###-###-####" class="form-control" value="{{formData.personalInfo.phone}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+						<div class="col-sm-3 text-right">
+							<label>Indicates sprint car driving experience<span class="field-required"> *</span></label>
+						</div>
+						<div class="col-sm-9">
+
+							<fieldset name="personalInfo.experience">
+								<div class="row text-center">
+
+									<div class="col-sm-2">
+										<hr>
+										<div class="experience-radio">
+											<input class="radio-button" type="radio" name="personalInfo.experience" value="1">
+											<p>Not Experienced</p>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<hr>
+										<div class="experience-radio">
+											<input class="radio-button"  type="radio" name="personalInfo.experience" value="2">
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<hr>
+										<div class="experience-radio">
+											<input class="radio-button" type="radio" name="personalInfo.experience" value="3">
+											<p>Somewhat Experienced</p>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<hr>
+										<div class="experience-radio">
+											<input class="radio-button"  type="radio" name="personalInfo.experience" value="4">
+											<span class="checkmark"></span>
+											<p> </p>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<hr>
+										<div class="experience-radio">
+											<input class="radio-button" type="radio" name="personalInfo.experience" value="5">
+											<span class="checkmark"></span>
+											<p>Very Experienced</p>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<h2 class="registration-section-title">Payment information</h2>
+				<div class="row">
+					<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+						<div class="col-sm-3 text-right">
+							<label>Name on card<span class="field-required"> *</span></label>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" name="paymentInfo.firstName"  placeholder="First Name" class="form-control" value="{{formData.[paymentInfo.firstName]}}">
+						</div>
+						<div class="col-sm-3">
+							<input type="text" name="paymentInfo.lastName"  placeholder="Last Name" class="form-control" value="{{formData.[paymentInfo.lastName]}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+						<div class="col-sm-3 text-right">
+							<label>Card Number<span class="field-required"> *</span></label>
+						</div>
+						<div class="col-sm-6">
+							<input type="number" name="paymentInfo.cardNumber" placeholder="Card Number" class="form-control" value="{{formData.paymentInfo.cardNumber}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group}">
+						<div class="col-sm-3 text-right">
+							<label>Expiration Date<span class="field-required"> *</span></label>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" name="paymentInfo.expDate" placeholder="MM/YY" class="form-control" value="{{formData.paymentInfo.expDate}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+						<div class="col-sm-3 text-right">
+							<label>CVV<span class="field-required"> *</span></label>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" name="paymentInfo.cvv" placeholder="CVV" class="form-control" value="{{formData.paymentInfo.cvv}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+						<div class="col-sm-3 text-right">
+							<label>Billing address<span class="field-required"> *</span></label>
+						</div>
+						<div class="col-sm-6">
+							<input type="text" name="paymentInfo.billingAddress" placeholder="Street Address" class="form-control" value="{{formData.paymentInfo.billingAddress}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+						<div class="col-sm-3 text-right">
+							<label>Billing address 2<span class="field-required"> *</span></label>
+						</div>
+						<div class="col-sm-6">
+							<input type="text" name="paymentInfo.billingAddress2" placeholder="Optional" class="form-control" value="{{formData.paymentInfo.billingAddress2}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+						<div class="col-sm-3 text-right">
+							<label>City<span class="field-required"> *</span></label>
+						</div>
+						<div class="col-sm-6">
+							<input type="text" name="paymentInfo.city" placeholder="city" class="form-control" value="{{formData.paymentInfo.city}}">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+						<div class="col-sm-3 text-right">
+							<label>State & Zip Code<span class="field-required"> *</span></label>
+						</div>
+						<div class="col-sm-3">
+							<input type="text" name="paymentInfo.state" placeholder="State" class="form-control" value="{{formData.paymentInfo.state}}">
+						</div>
+						<div class="col-sm-3">
+							<input type="text" name="paymentInfo.zipcode" placeholder="#####" class="form-control" value="{{formData.paymentInfo.zipcode}}">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row total-row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<div class="col-sm-5">
+					<h2 class="registration-section-title">Total</h2>
+				</div>
+				<div class="col-sm-3">
+					<div class="row">
+						<div class="col-sm-6 text-right">
+							<div class="total-text">
+								<p>Amount</p>
+								<p>$0.00</p>
+							</div>
+						</div>
+						<div class="col-sm-6 text-left">
+							<div class="">
+								<div class="form-actions">
+									<button type="submit" class="confirm-btn">Confirm</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	{{/if}}
 </div>

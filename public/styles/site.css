@@ -6102,3 +6102,93 @@ h1.faster-font {
 .quote-inner-card {
   padding-left: 70px;
   padding-right: 50px; }
+
+.registration {
+  font-family: "Montserrat", sans-serif; }
+  .registration .form-control {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    color: #999999;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #E86706;
+    margin-bottom: 25px; }
+  .registration label {
+    font-size: 16px; }
+  .registration h1 {
+    margin-top: 50px;
+    font-family: "Overpass Mono", monospace; }
+
+.program-text {
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.experience-radio input {
+  cursor: pointer; }
+
+.registration-section-title {
+  font-family: "Overpass Mono", monospace;
+  color: #FFCE00; }
+
+.field-required {
+  color: #E86706; }
+
+.program-card {
+  background-color: #343434;
+  padding: 20px;
+  height: 250px; }
+
+.program-radio {
+  padding-bottom: 15px; }
+
+.radio-button {
+  height: 20px;
+  width: 20px;
+  background-color: #E86706;
+  color: #E86706; }
+
+.row > .col-sm-2 {
+  padding-left: 0;
+  padding-right: 0; }
+  .row > .col-sm-2 hr {
+    width: 100%; }
+  .row > .col-sm-2 .experience-radio {
+    position: relative;
+    bottom: 35px; }
+
+.row > .col-sm-2:first-child hr {
+  width: 65%;
+  position: relative;
+  left: 50px; }
+
+.row > .col-sm-2:last-child hr {
+  width: 65%;
+  position: relative;
+  right: 50px; }
+
+.program-title {
+  font-family: "Overpass Mono", monospace;
+  font-size: 18px;
+  color: #E86706; }
+
+.confirm-btn {
+  border: none;
+  font-family: "Overpass Mono", monospace;
+  font-size: 24px;
+  color: black;
+  background-color: #FFCE00;
+  height: 70px;
+  width: 200px;
+  border-radius: 50px; }
+
+.total-text {
+  font-family: "Overpass Mono", monospace; }
+
+.total-text > p:first-child {
+  font-size: 20px; }
+
+.total-text > p:last-child {
+  font-size: 32px; }
+
+.total-row {
+  margin-bottom: 100px; }
