@@ -5836,7 +5836,7 @@ body {
   font-family: "Overpass Mono", monospace;
   background-color: #222222;
   color: #F7F7F7;
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 120px; }
 
 #footer {
@@ -5865,19 +5865,14 @@ body {
   margin-right: 0; }
 
 .navbar {
-  background-color: #222222; }
-  .navbar li {
-    font-size: 28px;
-    color: #F7F7F7;
-    font-family: "Overpass Mono", monospace; }
-  .navbar a:hover {
-    color: #F7F7F7; }
+  background-color: #222222;
+  font-size: 20px; }
 
 .navbar-default {
   border-bottom: 1px solid black; }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #F7F7F7; }
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand > a:hover {
+  color: #FFCE00; }
 
 .navbar-header {
   font-family: "Overpass Mono", monospace;
@@ -5887,12 +5882,29 @@ body {
   color: #FFCE00;
   background-color: #222222; }
 
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #FFCE00; }
+
 .navbar-default .navbar-nav > li > a {
   color: #F7F7F7; }
 
 .navbar-default .navbar-nav > li > a.nav-links {
-  padding-left: 50px;
   margin-right: 10px; }
+
+.navbar-default a.navbar-brand {
+  color: #F7F7F7; }
+
+.navbar-default a.navbar-brand.active {
+  color: #FFCE00; }
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 15px; }
+
+.navbar-brand {
+  font-size: 20px; }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: black; }
 
 hr {
   width: 95%;
