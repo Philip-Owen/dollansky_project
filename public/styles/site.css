@@ -6266,3 +6266,24 @@ h1.faster-font {
 
 .total-row {
   margin-bottom: 100px; }
+
+.contact-heading h2 {
+  color: #FFCE00; }
+
+.contact-form {
+  padding-top: 50px;
+  font-family: "Montserrat", sans-serif; }
+  .contact-form .form-control {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    color: #999999;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #E86706;
+    margin-bottom: 25px; }
+  .contact-form textarea.form-control {
+    border-radius: 25px;
+    max-width: 100%;
+    min-width: 100%; }
+  .contact-form label {
+    font-size: 16px; }
