@@ -5872,7 +5872,7 @@ body {
   border-bottom: 1px solid black; }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand > a:hover {
-  color: #FFCE00; }
+  color: #E86706; }
 
 .navbar-header {
   font-family: "Overpass Mono", monospace;
@@ -5882,8 +5882,11 @@ body {
   color: #FFCE00;
   background-color: #222222; }
 
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+.navbar-default .navbar-brand:focus {
   color: #FFCE00; }
+
+.navbar-default .navbar-brand:hover {
+  color: #E86706; }
 
 .navbar-default .navbar-nav > li > a {
   color: #F7F7F7; }

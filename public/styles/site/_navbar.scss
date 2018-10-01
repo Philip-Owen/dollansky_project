@@ -8,7 +8,7 @@
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand > a:hover {
-    color: $accent-color-yellow;
+    color: $accent-color-orange;
 }
 
 .navbar-header {
@@ -21,8 +21,12 @@
     background-color: $background-color;
 }
 
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+
+.navbar-default .navbar-brand:focus {
     color: $accent-color-yellow;
+}
+.navbar-default .navbar-brand:hover {
+    color: $accent-color-orange;  
 }
 
 .navbar-default .navbar-nav > li > a {
