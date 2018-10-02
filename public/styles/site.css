@@ -5915,7 +5915,7 @@ hr {
 
 h1.faster-font {
   font-family: 'Faster One', cursive;
-  font-size: 100px; }
+  font-size: 80px; }
 
 .jumbotron {
   background: url("../../images/dianaAishe605163Unsplash.png") no-repeat center;
@@ -5935,7 +5935,7 @@ h1.faster-font {
 .page-title {
   color: white;
   position: relative;
-  padding-left: 20px;
+  padding-left: 5px;
   padding-bottom: 120px; }
 
 .accent-yellow {
@@ -5993,6 +5993,11 @@ h1.faster-font {
   .button-register a {
     color: #FFCE00; }
 
+.button-register:hover {
+  background-color: #FFCE00; }
+  .button-register:hover a {
+    color: #343434; }
+
 .fixed-bottom {
   position: absolute;
   bottom: 0;
@@ -6042,9 +6047,8 @@ h1.faster-font {
 @media only screen and (max-width: 1023px) {
   .row-eq-height {
     flex-direction: column; }
-  h1.faster-font {
-    font-family: 'Faster One', cursive;
-    font-size: 60px; } }
+  h1, h1.faster-font {
+    font-size: 40px; } }
 
 .jumbotron.about {
   background: url("../../images/dollansky1 + dollansky1 Mask.png") no-repeat center;
