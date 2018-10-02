@@ -6189,7 +6189,7 @@ h1.faster-font {
   .registration .form-control {
     font-family: "Montserrat", sans-serif;
     font-style: italic;
-    color: #999999;
+    color: #f7f7f7;
     border-radius: 50px;
     background-color: transparent;
     border: 1px solid #E86706;
@@ -6200,29 +6200,37 @@ h1.faster-font {
     margin-top: 50px;
     font-family: "Overpass Mono", monospace; }
 
+.input-label {
+  padding-top: 5px; }
+
 .program-text {
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding: 0 10px 20px 10px; }
 
 .experience-radio input {
   cursor: pointer; }
 
 .registration-section-title {
+  margin-bottom: 40px;
   font-family: "Overpass Mono", monospace;
   color: #FFCE00; }
 
 .field-required {
   color: #E86706; }
 
+.program-cards {
+  margin-bottom: 50px; }
+
 .program-card {
   background-color: #343434;
-  padding: 20px;
-  height: 250px; }
+  padding: 10px;
+  height: 320px;
+  margin-bottom: 10px; }
 
 .program-radio {
   padding-bottom: 15px; }
 
 .radio-button {
+  padding-top: 20px;
   height: 20px;
   width: 20px;
   background-color: #E86706;
@@ -6274,6 +6282,49 @@ h1.faster-font {
 .total-row {
   margin-bottom: 100px; }
 
+input[type="radio"] {
+  display: none; }
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+input[type="radio"] + label span {
+  background-color: #f7f7f7;
+  border: 1px solid white; }
+
+input[type="radio"]:checked + label span {
+  background-color: #E86706;
+  border: 1px solid white; }
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear; }
+
+@media only screen and (max-width: 720px) {
+  .row > .col-sm-2 hr {
+    width: 100%;
+    position: relative; }
+  .row > .col-sm-2:first-child hr {
+    width: 100%;
+    position: relative;
+    left: 0; }
+  .row > .col-sm-2:last-child hr {
+    width: 100%;
+    position: relative;
+    right: 0; }
+  .program-card {
+    height: 250px; } }
+
 .contact-heading h2 {
   color: #FFCE00; }
 
@@ -6283,7 +6334,7 @@ h1.faster-font {
   .contact-form .form-control {
     font-family: "Montserrat", sans-serif;
     font-style: italic;
-    color: #999999;
+    color: #f7f7f7;
     border-radius: 50px;
     background-color: transparent;
     border: 1px solid #E86706;
