@@ -1,3 +1,7 @@
+html, body { 
+	overflow-x: hidden; 
+}
+
 html {
 	height: 100%;
 	box-sizing: border-box;
@@ -8,9 +12,10 @@ body {
 	margin: 0;
 	padding-bottom: 6rem;
 	min-height: 100%;
+	font-family: $overpass;
 	background-color: $background-color;
 	color: $body-text-color;
-	padding-top: 70px;
+	padding-top: 50px;
 	padding-bottom: 120px;
 }
 
@@ -29,12 +34,8 @@ body {
 	padding: 0;
 }
 
-.footer-section {
-	height: 120px;
-}
-
 .copyright>p {
-	font-size: $heading-4;
+	font-size: 18px;
 	position: relative;
 	padding-top: 70px;
 }
@@ -42,4 +43,8 @@ body {
 .footer-row {
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+.row.footer-row {
+	margin-right: 0;
 }

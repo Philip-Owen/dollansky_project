@@ -5821,6 +5821,9 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+html, body {
+  overflow-x: hidden; }
+
 html {
   height: 100%;
   box-sizing: border-box; }
@@ -5830,9 +5833,10 @@ body {
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
+  font-family: "Overpass Mono", monospace;
   background-color: #222222;
   color: #F7F7F7;
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 120px; }
 
 #footer {
@@ -5841,18 +5845,15 @@ body {
   bottom: 0;
   left: 0;
   background-color: #efefef;
-  font-size: 28pt;
+  font-size: 28px;
   font-family: "Overpass Mono", monospace;
   background-color: #343434; }
 
 .container-fluid {
   padding: 0; }
 
-.footer-section {
-  height: 120px; }
-
 .copyright > p {
-  font-size: 20pt;
+  font-size: 18px;
   position: relative;
   padding-top: 70px; }
 
@@ -5860,20 +5861,18 @@ body {
   padding-left: 20px;
   padding-right: 20px; }
 
+.row.footer-row {
+  margin-right: 0; }
+
 .navbar {
-  background-color: #222222; }
-  .navbar li {
-    font-size: 28pt;
-    color: #F7F7F7;
-    font-family: "Overpass Mono", monospace; }
-  .navbar a:hover {
-    color: #F7F7F7; }
+  background-color: #222222;
+  font-size: 20px; }
 
 .navbar-default {
   border-bottom: 1px solid black; }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #F7F7F7; }
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-brand > a:hover {
+  color: #E86706; }
 
 .navbar-header {
   font-family: "Overpass Mono", monospace;
@@ -5883,9 +5882,466 @@ body {
   color: #FFCE00;
   background-color: #222222; }
 
+.navbar-default .navbar-brand:focus {
+  color: #FFCE00; }
+
+.navbar-default .navbar-brand:hover {
+  color: #E86706; }
+
 .navbar-default .navbar-nav > li > a {
   color: #F7F7F7; }
 
 .navbar-default .navbar-nav > li > a.nav-links {
-  padding-left: 50px;
   margin-right: 10px; }
+
+.navbar-default a.navbar-brand {
+  color: #F7F7F7; }
+
+.navbar-default a.navbar-brand.active {
+  color: #FFCE00; }
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 15px; }
+
+.navbar-brand {
+  font-size: 20px; }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: black; }
+
+hr {
+  width: 95%;
+  border: 2px solid #343434; }
+
+h1.faster-font {
+  font-family: 'Faster One', cursive;
+  font-size: 80px; }
+
+.jumbotron {
+  background: url("../../images/dianaAishe605163Unsplash.png") no-repeat center;
+  height: 570px;
+  background-size: cover;
+  position: relative; }
+
+.jumbotron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); }
+
+.page-title {
+  color: white;
+  position: relative;
+  padding-left: 5px;
+  padding-bottom: 120px; }
+
+.accent-yellow {
+  color: #FFCE00; }
+
+.intro-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+
+.card {
+  background-color: #343434;
+  height: 100%; }
+
+.row-eq-height > .col-md-6 {
+  margin: 10px; }
+
+.row > .card-row {
+  height: 100%; }
+
+.card-content {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px; }
+
+.card-title {
+  color: #E86706; }
+
+.card-text {
+  font-family: "Montserrat", sans-serif;
+  color: #F7F7F7;
+  line-height: 30px;
+  font-size: 16px; }
+
+.card-text.row-one {
+  padding-bottom: 20%; }
+
+.card-text.row-two {
+  padding-bottom: 25%; }
+
+.card-text-title {
+  color: #FFCE00;
+  margin-bottom: 0px; }
+
+.button-register {
+  border-radius: 50px;
+  border: 1px solid #FFCE00;
+  background-color: transparent;
+  color: #FFCE00;
+  height: 42px;
+  width: 131px;
+  margin-bottom: 30px; }
+  .button-register a {
+    color: #FFCE00; }
+
+.button-register:hover {
+  background-color: #FFCE00; }
+  .button-register:hover a {
+    color: #343434; }
+
+.fixed-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row; }
+
+.fa-user-circle {
+  padding: 20px;
+  font-size: 84px; }
+
+.customer-row {
+  padding-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px; }
+  .customer-row .col-md-4 {
+    margin: 10px; }
+
+.customer-comment {
+  font-family: "Montserrat", sans-serif;
+  padding: 0 40px 20px 40px; }
+  .customer-comment .customer-text {
+    font-style: italic; }
+  .customer-comment .customer-name {
+    color: #FFCE00;
+    font-size: 16px; }
+
+.register-banner {
+  background-color: #E86706;
+  height: 130px;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+  .register-banner h3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 35%; }
+    .register-banner h3 a {
+      color: #F7F7F7; }
+
+@media only screen and (max-width: 1023px) {
+  .row-eq-height {
+    flex-direction: column; }
+  h1, h1.faster-font {
+    font-size: 40px; } }
+
+.jumbotron.about {
+  background: url("../../images/dollansky1 + dollansky1 Mask.png") no-repeat center;
+  height: 570px;
+  background-size: cover;
+  position: relative;
+  padding-left: 0; }
+
+.quote-card {
+  background-color: #FFCE00;
+  padding: 60px 0 40px 0;
+  color: black;
+  opacity: .9;
+  height: 100%; }
+  .quote-card h2 {
+    font-size: 36px; }
+
+.about-quote .quote-card {
+  padding: 60px 0 40px 0; }
+
+.mission-quote {
+  margin-top: 70px; }
+  .mission-quote .quote-card {
+    padding: 60px 0 40px 0; }
+
+.about-text {
+  margin-bottom: 30px; }
+  .about-text h2 {
+    font-size: 36px;
+    padding-bottom: 10px; }
+  .about-text p {
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 10px; }
+
+.about-section {
+  padding-bottom: 50px; }
+
+.accolades {
+  top: -70px;
+  padding-right: 20px; }
+  .accolades .col-sm-12 {
+    margin-bottom: 20px; }
+
+.accolades-title {
+  color: #E86706; }
+
+.fa-trophy {
+  font-size: 70px; }
+
+.fa-quote-right {
+  color: #F7F7F7;
+  font-size: 50px; }
+
+.mission-text h2 {
+  font-size: 36px;
+  padding-bottom: 10px; }
+
+.mission-text p {
+  font-size: 28px;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 10px; }
+
+.section-text-box {
+  padding-top: 20px; }
+
+.mission-row {
+  margin-bottom: 60px; }
+
+.quote-inner-card {
+  padding-left: 70px;
+  padding-right: 50px; }
+
+.equipment-header {
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.equipment-header-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin-top: 25px; }
+
+.img-responsive {
+  margin: 0 auto;
+  margin-top: 150px; }
+
+.sponsor-wheel, .sponsor-large-wing {
+  display: none; }
+
+.parts-list-title p {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif; }
+
+.sponsor-list {
+  padding: 10px;
+  height: 100%; }
+
+.part {
+  padding: 20px;
+  background-color: #343434;
+  margin-bottom: 10px;
+  opacity: .6;
+  height: 140px; }
+
+.part-small {
+  opacity: 1; }
+
+.part-highlighted {
+  color: white;
+  opacity: 1;
+  border: 2px solid #E86706;
+  -webkit-transition: border 1s;
+  /* Safari */
+  transition: border 1s; }
+
+.parts-list {
+  margin-bottom: 40px; }
+  .parts-list .part-description {
+    line-height: 25px; }
+  .parts-list .part-seller-name {
+    margin-bottom: 0; }
+  .parts-list .part-name {
+    margin-bottom: 5px; }
+
+.part-name {
+  font-family: "Overpass Mono", monospace; }
+
+.part-description {
+  font-family: "Montserrat", sans-serif; }
+
+.part-seller-name {
+  color: #FFCE00; }
+
+.registration {
+  font-family: "Montserrat", sans-serif; }
+  .registration .form-control {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    color: #f7f7f7;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #E86706;
+    margin-bottom: 25px; }
+  .registration label {
+    font-size: 16px; }
+  .registration h1 {
+    margin-top: 50px;
+    font-family: "Overpass Mono", monospace; }
+
+.input-label {
+  padding-top: 5px; }
+
+.program-text {
+  padding: 0 10px 20px 10px; }
+
+.experience-radio input {
+  cursor: pointer; }
+
+.registration-section-title {
+  margin-bottom: 40px;
+  font-family: "Overpass Mono", monospace;
+  color: #FFCE00; }
+
+.field-required {
+  color: #E86706; }
+
+.program-cards {
+  margin-bottom: 50px; }
+
+.program-card {
+  background-color: #343434;
+  padding: 10px;
+  height: 320px;
+  margin-bottom: 10px; }
+
+.program-radio {
+  padding-bottom: 15px; }
+
+.radio-button {
+  padding-top: 20px;
+  height: 20px;
+  width: 20px;
+  background-color: #E86706;
+  color: #E86706; }
+
+.row > .col-sm-2 {
+  padding-left: 0;
+  padding-right: 0; }
+  .row > .col-sm-2 hr {
+    width: 100%; }
+  .row > .col-sm-2 .experience-radio {
+    position: relative;
+    bottom: 35px; }
+
+.row > .col-sm-2:first-child hr {
+  width: 65%;
+  position: relative;
+  left: 50px; }
+
+.row > .col-sm-2:last-child hr {
+  width: 65%;
+  position: relative;
+  right: 50px; }
+
+.program-title {
+  font-family: "Overpass Mono", monospace;
+  font-size: 18px;
+  color: #E86706; }
+
+.confirm-btn {
+  border: none;
+  font-family: "Overpass Mono", monospace;
+  font-size: 24px;
+  color: black;
+  background-color: #FFCE00;
+  height: 70px;
+  width: 200px;
+  border-radius: 50px; }
+
+.total-text {
+  font-family: "Overpass Mono", monospace; }
+
+.total-text > p:first-child {
+  font-size: 20px; }
+
+.total-text > p:last-child {
+  font-size: 32px; }
+
+.total-row {
+  margin-bottom: 100px; }
+
+input[type="radio"] {
+  display: none; }
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+input[type="radio"] + label span {
+  background-color: #f7f7f7;
+  border: 1px solid white; }
+
+input[type="radio"]:checked + label span {
+  background-color: #E86706;
+  border: 1px solid white; }
+
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear; }
+
+@media only screen and (max-width: 720px) {
+  .row > .col-sm-2 hr {
+    width: 100%;
+    position: relative; }
+  .row > .col-sm-2:first-child hr {
+    width: 100%;
+    position: relative;
+    left: 0; }
+  .row > .col-sm-2:last-child hr {
+    width: 100%;
+    position: relative;
+    right: 0; }
+  .program-card {
+    height: 250px; } }
+
+.contact-heading h2 {
+  color: #FFCE00; }
+
+.contact-form {
+  padding-top: 50px;
+  font-family: "Montserrat", sans-serif; }
+  .contact-form .form-control {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    color: #f7f7f7;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #E86706;
+    margin-bottom: 25px; }
+  .contact-form textarea.form-control {
+    border-radius: 25px;
+    max-width: 100%;
+    min-width: 100%; }
+  .contact-form label {
+    font-size: 16px; }
