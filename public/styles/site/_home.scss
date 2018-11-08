@@ -20,8 +20,19 @@
     position: relative;
     padding-left: 5px;
     padding-bottom: 170px;
-  }
+}
 
+.social-feeds {
+    h2 {
+        padding-left: 160px;
+        padding-bottom: 25px;
+    }
+    .social-button {
+        padding-left: 160px;
+        padding-top: 25px;
+    }
+}
+ 
 .home-banner {
     margin: 50px 0 50px 0;
     background: url('../../images/dianaAishe605163Unsplash.png') no-repeat center 60%;
@@ -60,4 +71,38 @@
     font-size: 35px;
     vertical-align:middle;
 
+}
+
+.home-photos {
+    .row {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+}
+
+.news-header {
+    padding-bottom: 25px;
+}
+
+.news-article {
+    font-size: 21px;
+    font-family: $montserrat;
+    padding-bottom: 25px;
+    .news-article-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .news-article-content {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .news-article-readmore {
+        cursor: pointer;
+        font-size: 25px;
+        color: $body-text-color;
+        font-family: $overpass;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: $accent-color-yellow;
+    }
 }
