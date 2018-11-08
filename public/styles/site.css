@@ -5837,7 +5837,7 @@ body {
   background-color: #222222;
   color: #F7F7F7;
   padding-top: 50px;
-  padding-bottom: 120px; }
+  padding-bottom: 150px; }
 
 #footer {
   position: absolute;
@@ -5863,6 +5863,10 @@ body {
 
 .row.footer-row {
   margin-right: 0; }
+
+.footer-nav-link {
+  color: #F7F7F7;
+  font-size: 25px; }
 
 .navbar {
   background-color: #222222;
