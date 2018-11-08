@@ -5940,7 +5940,8 @@ body {
 
 .social-feeds .social-button {
   padding-left: 160px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  padding-bottom: 20px; }
 
 .home-banner {
   margin: 50px 0 50px 0;
@@ -5972,6 +5973,9 @@ body {
 .fa-angle-right {
   font-size: 35px;
   vertical-align: middle; }
+
+.news-photos {
+  padding-bottom: 60px; }
 
 .home-photos .row {
   padding-bottom: 15px;
