@@ -5837,7 +5837,7 @@ body {
   background-color: #222222;
   color: #F7F7F7;
   padding-top: 50px;
-  padding-bottom: 120px; }
+  padding-bottom: 150px; }
 
 #footer {
   position: absolute;
@@ -5863,6 +5863,10 @@ body {
 
 .row.footer-row {
   margin-right: 0; }
+
+.footer-nav-link {
+  color: #F7F7F7;
+  font-size: 25px; }
 
 .navbar {
   background-color: #222222;
@@ -5908,6 +5912,96 @@ body {
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: black; }
+
+.jumbotron.home {
+  background: url("../../images/DD_homepage_GIF.gif") no-repeat 40% 75%;
+  height: 600px;
+  background-size: cover;
+  position: relative; }
+
+.jumbotron.home:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(47, 47, 47, 0.7); }
+
+.home-title {
+  color: white;
+  position: relative;
+  padding-left: 5px;
+  padding-bottom: 170px; }
+
+.social-feeds h2 {
+  padding-left: 160px;
+  padding-bottom: 25px; }
+
+.social-feeds .social-button {
+  padding-left: 160px;
+  padding-top: 25px;
+  padding-bottom: 20px; }
+
+.home-banner {
+  margin: 50px 0 50px 0;
+  background: url("../../images/dianaAishe605163Unsplash.png") no-repeat center 60%;
+  height: 200px;
+  background-size: cover;
+  position: relative; }
+  .home-banner h2 {
+    font-size: 40px;
+    padding-left: 30px;
+    margin: 0 0 5px 0; }
+  .home-banner .col-sm-12 {
+    padding-left: 0; }
+
+.driven-text {
+  padding-top: 40px; }
+
+.driven-link {
+  vertical-align: middle;
+  background-color: #E86706;
+  width: 48%;
+  padding: 10px 0 10px 0; }
+  .driven-link h2 {
+    display: inline;
+    vertical-align: middle; }
+  .driven-link a {
+    color: #F7F7F7; }
+
+.fa-angle-right {
+  font-size: 35px;
+  vertical-align: middle; }
+
+.news-photos {
+  padding-bottom: 60px; }
+
+.home-photos .row {
+  padding-bottom: 15px;
+  padding-top: 15px; }
+
+.news-header {
+  padding-bottom: 25px; }
+
+.news-article {
+  font-size: 21px;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 25px; }
+  .news-article .news-article-title {
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .news-article .news-article-content {
+    font-size: 20px;
+    margin-bottom: 5px; }
+  .news-article .news-article-readmore {
+    cursor: pointer;
+    font-size: 25px;
+    color: #F7F7F7;
+    font-family: "Overpass Mono", monospace;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #FFCE00; }
 
 hr {
   width: 95%;
