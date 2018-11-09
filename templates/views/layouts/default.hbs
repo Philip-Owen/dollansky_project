@@ -93,7 +93,7 @@
 		<div class="container-fluid">
 			<div id="footer">
 				<div class="row footer-row">
-					<div class="col-sm-6">
+					<div class="col-sm-4">
 						<div class="col-xs-6 footer-section">
 							<div>
 								<p>Connect</p>
@@ -110,25 +110,16 @@
 							<i class="fas fa-envelope-square"></i>
 						</div>
 					</div>
-					<div class="col-sm-6">
-						<div class="row text-center">
-							<div class="col-sm-2">
-								{{!-- <a class="footer-nav-link "></a> --}}
-							</div>
-							<div class="col-sm-2">
-								<a class="footer-nav-link ">Home</a>
-							</div>
-							<div class="col-sm-2">
-								<a class="footer-nav-link">Academy</a>
-							</div>
-							<div class="col-sm-2">
-								<a class="footer-nav-link">About</a>
-							</div>
-							<div class="col-sm-2">
-								<a class="footer-nav-link">Equipment</a>
-							</div>
-							<div class="col-sm-2">
-								<a class="footer-nav-link">Contact</a>
+					<div class="col-sm-8">
+						<div class="row">
+							<div class="col-sm-12">
+								<ul class="footer-nav-bar navbar-nav navbar-right">
+									{{# each navLinks}}
+										<li>
+											<a href="{{ href }}" class="footer-nav-link">{{ label }}</a>
+										</li>
+									{{/each}}
+								</ul>
 							</div>
 						</div>
 						<div class="row">

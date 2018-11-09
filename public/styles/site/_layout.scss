@@ -25,7 +25,7 @@ body {
 	bottom: 0;
 	left: 0;
 	background-color: #efefef;
-	font-size: $heading-3;
+	font-size: 20px;
 	font-family: $overpass;
 	background-color: $accent-color-gray;
 }
@@ -37,7 +37,7 @@ body {
 .copyright>p {
 	font-size: 18px;
 	position: relative;
-	padding-top: 70px;
+	padding-top: 20px;
 }
 
 .footer-row {
@@ -49,7 +49,33 @@ body {
 	margin-right: 0;
 }
 
+.footer-nav-bar > li > a {
+    position: relative;
+    display: block;
+	padding: 10px 15px;
+}
+
+.footer-nav-bar > li {
+	list-style-type: none;
+}
+
 .footer-nav-link {
 	color: $body-text-color;
-	font-size: 25px;
+	font-size: 20px;
+}
+
+.footer-nav-link:hover, .footer-nav-link:focus {
+	color: $body-text-color;
+}
+
+.footer-nav-div {
+	text-align: right;
+}
+@media only screen and (max-width: 768px) {
+	body {
+		padding-bottom: 300px;
+	}
+	.footer-nav-bar {
+		text-align: right;
+	}
 }
