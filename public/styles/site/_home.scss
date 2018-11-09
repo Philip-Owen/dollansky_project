@@ -52,24 +52,28 @@
 
 .driven-text {
     padding-top: 40px;
+    h2 {
+        font-size: 3vw;
+    }
 }
 
 .driven-link {
     vertical-align:middle;
-    background-color: $accent-color-orange;
-    width: 48%;
     padding: 10px 0 10px 0;
     h2 {
         display: inline;
         vertical-align:middle;
+        background-color: $accent-color-orange;
+        padding-right: 5px;
     }
     a {
         color: $body-text-color;
+        
     }
 }
 
 .fa-angle-right {
-    font-size: 35px;
+    font-size: 3vw;
     vertical-align:middle;
 
 }
