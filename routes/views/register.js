@@ -26,23 +26,12 @@ exports = module.exports = function (req, res) {
 		updater.process(req.body, {
 			flashErrors: true,
 			fields: `
-				programName,
-				programPrice,
 				personalInfo.firstName,
 				personalInfo.lastName,
 				personalInfo.email,
 				personalInfo.phone,
 				personalInfo.experience,
-				paymentInfo.firstName,
-				paymentInfo.lastName,
-				paymentInfo.cardNumber,
-				paymentInfo.expDate,
-				paymentInfo.cvv,
-				paymentInfo.billingAddress,
-				paymentInfo.billingAddress2,
-				paymentInfo.city,
-				paymentInfo.state,
-				paymentInfo.zipcode`,
+				`,
 			errorMessage: 'There was a problem submitting your enquiry:',
 		}, function (err) {
 			if (err) {
