@@ -6318,6 +6318,11 @@ h1.faster-font {
     margin-top: 50px;
     font-family: "Overpass Mono", monospace; }
 
+.registration-text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 22px; }
+
 .input-label {
   padding-top: 5px; }
 
@@ -6334,18 +6339,6 @@ h1.faster-font {
 
 .field-required {
   color: #E86706; }
-
-.program-cards {
-  margin-bottom: 50px; }
-
-.program-card {
-  background-color: #343434;
-  padding: 10px;
-  height: 320px;
-  margin-bottom: 10px; }
-
-.program-radio {
-  padding-bottom: 15px; }
 
 .radio-button {
   padding-top: 20px;
@@ -6378,6 +6371,9 @@ h1.faster-font {
   font-size: 18px;
   color: #E86706; }
 
+.register-button-row {
+  margin-bottom: 50px; }
+
 .confirm-btn {
   border: none;
   font-family: "Overpass Mono", monospace;
@@ -6387,18 +6383,6 @@ h1.faster-font {
   height: 70px;
   width: 200px;
   border-radius: 50px; }
-
-.total-text {
-  font-family: "Overpass Mono", monospace; }
-
-.total-text > p:first-child {
-  font-size: 20px; }
-
-.total-text > p:last-child {
-  font-size: 32px; }
-
-.total-row {
-  margin-bottom: 100px; }
 
 input[type="radio"] {
   display: none; }

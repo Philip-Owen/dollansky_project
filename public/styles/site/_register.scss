@@ -16,6 +16,13 @@
       margin-top: 50px;
       font-family: $overpass;
     }
+
+}
+
+.registration-text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 22px;
 }
 
 .input-label {
@@ -43,21 +50,6 @@
 
 .field-required {
     color: $accent-color-orange;
-}
-
-.program-cards {
-  margin-bottom: 50px;
-}
-
-.program-card {
-    background-color: $accent-color-gray;
-    padding: 10px;
-    height: 320px;
-    margin-bottom: 10px;
-}
-
-.program-radio {
-    padding-bottom: 15px;
 }
 
 .radio-button {
@@ -102,6 +94,10 @@
   color: $accent-color-orange;
 }
 
+.register-button-row {
+  margin-bottom: 50px;
+}
+
 .confirm-btn {
   border: none;
   font-family: $overpass;
@@ -113,26 +109,9 @@
   border-radius: 50px;
 }
 
-.total-text {
-  font-family: $overpass;
-}
-
-.total-text>p:first-child {
-  font-size: 20px;
-}
-
-.total-text>p:last-child {
-  font-size: 32px;
-}
-
-.total-row {
-  margin-bottom: 100px;
-}
-
 $DarkBrown: #292321;
 
 $Orange: #CC3300;
-
 
 input[type="radio"] {
   display:none;
