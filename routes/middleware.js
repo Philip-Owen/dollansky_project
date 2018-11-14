@@ -10,8 +10,15 @@ exports.initLocals = function (req, res, next) {
 		{ label: 'academy', key: 'academy', href: '/academy' },
 		{ label: 'about', key: 'about', href: '/about' },
 		{ label: 'equipment', key: 'equipment', href: '/equipment' },
-		// { label: 'register', key: 'register', href: '/register' },
+		{ label: 'register', key: 'register', href: '/register' },
 		{ label: 'contact', key: 'contact', href: '/contact' },
+	];
+	res.locals.navLinksFooter = [
+		{ label: 'home', key: 'home', href: '/' },
+		{ label: 'academy', key: 'academy', href: '/academy' },
+		{ label: 'about', key: 'about', href: '/about' },
+		{ label: 'equipment', key: 'equipment', href: '/equipment' },
+		{ label: 'register', key: 'register', href: '/register' },
 	];
 	res.locals.home = [
 		{ label: 'home', key: 'home', href: '/' },
