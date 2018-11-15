@@ -5880,7 +5880,11 @@ body {
   color: #F7F7F7; }
 
 .footer-nav-div {
-  text-align: right; }
+  text-align: right;
+  height: 50px; }
+
+.social-link, .social-link:hover, .social-link:active {
+  color: white; }
 
 @media only screen and (max-width: 768px) {
   body {
@@ -5906,6 +5910,10 @@ body {
   color: #FFCE00;
   background-color: #222222; }
 
+.nav-car {
+  height: 50px;
+  width: 50px; }
+
 .navbar-default .navbar-brand:focus {
   color: #FFCE00; }
 
@@ -5923,10 +5931,6 @@ body {
 
 .navbar-default a.navbar-brand.active {
   color: #FFCE00; }
-
-.navbar > .container .navbar-brand,
-.navbar > .container-fluid .navbar-brand {
-  margin-left: 15px; }
 
 .navbar-brand {
   font-size: 20px; }
@@ -5967,8 +5971,8 @@ body {
 
 .home-banner {
   margin: 50px 0 50px 0;
-  background: url("../../images/dianaAishe605163Unsplash.png") no-repeat center 60%;
-  height: 200px;
+  background: url("../../images/dollansky-academy-banner2.png") no-repeat center 60%;
+  height: 250px;
   background-size: cover;
   position: relative; }
   .home-banner h2 {
@@ -5979,9 +5983,14 @@ body {
     padding-left: 0; }
 
 .driven-text {
-  padding-top: 40px; }
+  position: relative;
+  padding-top: 60px; }
   .driven-text h2 {
-    font-size: 3vw; }
+    font-size: 3vw;
+    text-shadow: 0 0 5px black; }
+
+.driven-text:first-child {
+  margin-bottom: 10px; }
 
 .driven-link {
   vertical-align: middle;
@@ -5999,6 +6008,7 @@ body {
   vertical-align: middle; }
 
 .news-photos {
+  padding-top: 60px;
   padding-bottom: 60px; }
 
 .home-photos .row {
@@ -6036,19 +6046,10 @@ h1.faster-font {
   font-size: 80px; }
 
 .jumbotron {
-  background: url("../../images/dianaAishe605163Unsplash.png") no-repeat center;
+  background: url("../../images/dollansky-academy-banner2.png") right center;
   height: 570px;
   background-size: cover;
   position: relative; }
-
-.jumbotron:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7); }
 
 .page-title {
   color: white;
@@ -6318,6 +6319,11 @@ h1.faster-font {
     margin-top: 50px;
     font-family: "Overpass Mono", monospace; }
 
+.registration-text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 22px; }
+
 .input-label {
   padding-top: 5px; }
 
@@ -6334,18 +6340,6 @@ h1.faster-font {
 
 .field-required {
   color: #E86706; }
-
-.program-cards {
-  margin-bottom: 50px; }
-
-.program-card {
-  background-color: #343434;
-  padding: 10px;
-  height: 320px;
-  margin-bottom: 10px; }
-
-.program-radio {
-  padding-bottom: 15px; }
 
 .radio-button {
   padding-top: 20px;
@@ -6378,6 +6372,9 @@ h1.faster-font {
   font-size: 18px;
   color: #E86706; }
 
+.register-button-row {
+  margin-bottom: 50px; }
+
 .confirm-btn {
   border: none;
   font-family: "Overpass Mono", monospace;
@@ -6387,18 +6384,6 @@ h1.faster-font {
   height: 70px;
   width: 200px;
   border-radius: 50px; }
-
-.total-text {
-  font-family: "Overpass Mono", monospace; }
-
-.total-text > p:first-child {
-  font-size: 20px; }
-
-.total-text > p:last-child {
-  font-size: 32px; }
-
-.total-row {
-  margin-bottom: 100px; }
 
 input[type="radio"] {
   display: none; }

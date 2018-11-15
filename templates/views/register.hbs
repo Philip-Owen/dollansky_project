@@ -14,68 +14,22 @@
 	</div>
 
 	{{else}}
-	<form method="post">
-		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
-				<h2 class="registration-section-title">Select a program</h2>
-				<div class="row">
-					<fieldset class="program-cards" name="programName">
-						<div class="col-md-3">
-							<div class="program-card">
-								<h2 class="text-center">$XXX</h2>
-								<div class="program-text">
-									<p class="program-title">team coaching</p>
-									<p> Customized training for your teams needs. This program will enhance your driving ability and strengthen you as a team in key areas.</p>
-									<div class="text-center fixed-bottom program-radio">
-										<input id="team-coaching" class="radio" type="radio" name="programName" value="team coaching">
-										<label for="team-coaching"><span></span></label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="program-card">
-							<h2 class="text-center">$XXX</h2>
-								<div class="program-text">
-									<p class="program-title">racing experience</p>
-									<p>Experience the thrill of a lifetime. Choose between packages and number of laps. Can drive a DDTW prepared car or bring your own.</p>
-									<div class="text-center fixed-bottom program-radio">
-										<input id="racing-experience" class="radio" type="radio" name="programName" value="racing experience">
-										<label for="racing-experience"><span></span></label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="program-card">
-								<h2 class="text-center">$XXX</h2>
-								<div class="program-text">
-									<p class="program-title">2-day driving course</p>
-									<p>Get up to speed on building your professional brand and practice how to stay safe while racing.</p>
-								</div>
-								<div class="text-center fixed-bottom program-radio">
-									<input id="2-day-driving" class="radio"  type="radio" name="programName" value="2 day course">
-									<label for="2-day-driving"><span></span></label>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="program-card">
-								<h2 class="text-center">$XXX</h2>
-								<div class="program-text">
-									<p class="program-title">promotions consulting</p>
-									<p>Get consulted by our expert team on your upcoming event to maximize it’s success.</p>
-									<div class="text-center fixed-bottom program-radio">
-										<input id="promotions-consulting" class="radio-button"  type="radio" name="programName" value="promotions consulting">
-										<label for="promotions-consulting"><span></span></label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</fieldset>
-				</div>
-			</div>
+	<div class="row">
+		<div class="col-sm-10 col-sm-offset-1 registration-text">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+			</p>
+			<p>
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute. 
+
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+
+			</p>
 		</div>
+	</div>
+	<form method="post">
 		<hr>
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1">
@@ -169,118 +123,14 @@
 				</div>
 			</div>
 		</div>
-		<hr>
-		<div class="row">
+		<div class="row register-button-row">
 			<div class="col-sm-10 col-sm-offset-1">
-				<h2 class="registration-section-title">Payment information</h2>
 				<div class="row">
-					<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
-						<div class="col-sm-3 text-right">
-							<label class="input-label">Name on card<span class="field-required"> *</span></label>
-						</div>
-						<div class="col-sm-3">
-							<input type="text" name="paymentInfo.firstName"  placeholder="First Name" class="form-control" value="{{formData.[paymentInfo.firstName]}}">
-						</div>
-						<div class="col-sm-3">
-							<input type="text" name="paymentInfo.lastName"  placeholder="Last Name" class="form-control" value="{{formData.[paymentInfo.lastName]}}">
-						</div>
+					<div class="col-sm-8">
 					</div>
-				</div>
-				<div class="row">
-					<div class="form-group">
-						<div class="col-sm-3 text-right">
-							<label class="input-label">Card Number<span class="field-required"> *</span></label>
-						</div>
-						<div class="col-sm-6">
-							<input type="number" name="paymentInfo.cardNumber" placeholder="Card Number" class="form-control" value="{{formData.paymentInfo.cardNumber}}">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group}">
-						<div class="col-sm-3 text-right">
-							<label class="input-label">Expiration Date<span class="field-required"> *</span></label>
-						</div>
-						<div class="col-sm-3">
-							<input type="text" name="paymentInfo.expDate" placeholder="MM/YY" class="form-control" value="{{formData.paymentInfo.expDate}}">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group">
-						<div class="col-sm-3 text-right">
-							<label class="input-label">CVV<span class="field-required"> *</span></label>
-						</div>
-						<div class="col-sm-3">
-							<input type="text" name="paymentInfo.cvv" placeholder="CVV" class="form-control" value="{{formData.paymentInfo.cvv}}">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group">
-						<div class="col-sm-3 text-right">
-							<label class="input-label">Billing address<span class="field-required"> *</span></label>
-						</div>
-						<div class="col-sm-6">
-							<input type="text" name="paymentInfo.billingAddress" placeholder="Street Address" class="form-control" value="{{formData.paymentInfo.billingAddress}}">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group">
-						<div class="col-sm-3 text-right">
-							<label class="input-label">Billing address 2<span class="field-required"> *</span></label>
-						</div>
-						<div class="col-sm-6">
-							<input type="text" name="paymentInfo.billingAddress2" placeholder="Optional" class="form-control" value="{{formData.paymentInfo.billingAddress2}}">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group">
-						<div class="col-sm-3 text-right">
-							<label class="input-label">City<span class="field-required"> *</span></label>
-						</div>
-						<div class="col-sm-6">
-							<input type="text" name="paymentInfo.city" placeholder="city" class="form-control" value="{{formData.paymentInfo.city}}">
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
-						<div class="col-sm-3 text-right">
-							<label class="input-label">State & Zip Code<span class="field-required"> *</span></label>
-						</div>
-						<div class="col-sm-3">
-							<input type="text" name="paymentInfo.state" placeholder="State" class="form-control" value="{{formData.paymentInfo.state}}">
-						</div>
-						<div class="col-sm-3">
-							<input type="text" name="paymentInfo.zipcode" placeholder="#####" class="form-control" value="{{formData.paymentInfo.zipcode}}">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<div class="row total-row">
-			<div class="col-sm-10 col-sm-offset-1">
-				<div class="col-sm-5">
-					<h2 class="registration-section-title">Total</h2>
-				</div>
-				<div class="col-sm-3">
-					<div class="row">
-						<div class="col-sm-6 text-right">
-							<div class="total-text">
-								<p>Amount</p>
-								<p>$0.00</p>
-							</div>
-						</div>
-						<div class="col-sm-6 text-left">
-							<div class="">
-								<div class="form-actions">
-									<button type="submit" class="confirm-btn">Confirm</button>
-								</div>
-							</div>
+					<div class="col-sm-4">
+						<div class="form-actions">
+							<button type="submit" class="confirm-btn">Register</button>
 						</div>
 					</div>
 				</div>
