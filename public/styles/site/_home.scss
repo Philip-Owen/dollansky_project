@@ -36,8 +36,8 @@
  
 .home-banner {
     margin: 50px 0 50px 0;
-    background: url('../../images/dianaAishe605163Unsplash.png') no-repeat center 60%;
-    height: 200px;
+    background: url('../../images/dollansky-academy-banner2.png') no-repeat center 60%;
+    height: 250px;
     background-size: cover;
     position: relative;
     h2 {
@@ -51,10 +51,16 @@
 }
 
 .driven-text {
-    padding-top: 40px;
+    position: relative;
+    padding-top: 60px;
     h2 {
         font-size: 3vw;
+        text-shadow: 0 0 5px rgba(0,0,0,1);
     }
+}
+
+.driven-text:first-child {
+    margin-bottom: 10px;
 }
 
 .driven-link {
@@ -79,6 +85,7 @@
 }
 
 .news-photos {
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
