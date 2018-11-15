@@ -70,7 +70,12 @@ body {
 
 .footer-nav-div {
 	text-align: right;
+	height: 50px;
 }
+.social-link, .social-link:hover, .social-link:active  {
+	color:white;
+}
+
 @media only screen and (max-width: 768px) {
 	body {
 		padding-bottom: 300px;
