@@ -5880,7 +5880,11 @@ body {
   color: #F7F7F7; }
 
 .footer-nav-div {
-  text-align: right; }
+  text-align: right;
+  height: 50px; }
+
+.social-link, .social-link:hover, .social-link:active {
+  color: white; }
 
 @media only screen and (max-width: 768px) {
   body {
@@ -5906,6 +5910,10 @@ body {
   color: #FFCE00;
   background-color: #222222; }
 
+.nav-car {
+  height: 50px;
+  width: 50px; }
+
 .navbar-default .navbar-brand:focus {
   color: #FFCE00; }
 
@@ -5923,10 +5931,6 @@ body {
 
 .navbar-default a.navbar-brand.active {
   color: #FFCE00; }
-
-.navbar > .container .navbar-brand,
-.navbar > .container-fluid .navbar-brand {
-  margin-left: 15px; }
 
 .navbar-brand {
   font-size: 20px; }
